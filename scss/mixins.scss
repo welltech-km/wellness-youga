@@ -1,0 +1,55 @@
+@mixin flex-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@mixin flex-column {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+@mixin text-center {
+  text-align: center;
+}
+
+@mixin button-style {
+  text-decoration: none;
+}
+
+@mixin sp{
+  @media screen and (max-width:767px) {
+    @content;
+  }
+}
+@mixin tab{
+  @media screen and (min-width:768px) and (max-width:1023px) {
+    @content;
+  }
+}
+@mixin spntab{
+  @media screen and (max-width:1023px) {
+    @content;
+  }
+}
+@mixin pc{
+  @media screen and (min-width:1024px)and (max-width:1439px) {
+    @content;
+  }
+}
+@mixin pc-large{
+  @media screen and (min-width:1440px) {
+    @content;
+  }
+}
+@mixin monitor{
+  @media screen and (min-width:1920px) {
+    @content;
+  }
+}
+@mixin monitor-big{
+  @media screen and (min-width:2150px) {
+    @content;
+  }
+}
